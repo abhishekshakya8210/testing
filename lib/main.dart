@@ -5,12 +5,15 @@ import 'package:testing/apiwithprovide/api_1.dart';
 import 'package:testing/apiwithprovide/api_2.dart';
 import 'package:testing/apiwithprovide/api_3.dart';
 import 'package:testing/apiwithprovide/api_4.dart';
+import 'package:testing/apiwithprovide/api_5.dart';
+import 'package:testing/apiwithprovide/api_6.dart';
 import 'package:testing/crudoprations/create.dart' hide Create;
 import 'package:testing/logic/login_1.dart';
 import 'package:testing/provider/api2provider.dart';
 import 'package:testing/provider/api_1provider.dart';
 import 'package:testing/provider/api_3provider.dart';
 import 'package:testing/provider/api_4provider.dart';
+import 'package:testing/provider/api_5provider.dart';
 import 'package:testing/provider/selectprovider.dart';
 import 'package:testing/services/logicincreament.dart';
 import 'package:testing/provider/TextApiprovider.dart';
@@ -58,11 +61,14 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_)=>Api2provider()),
          ChangeNotifierProvider(create: (_)=>Api3provider()),
           ChangeNotifierProvider(create: (_)=>Api4provider()),
+          ChangeNotifierProvider(create: (_)=>Api5provider()),
     ],
     child: MaterialApp(
       debugShowCheckedModeBanner: false,
       
-      home://Api_4()
+      home:Api_6()
+      //Api_5()
+      //Api_4()
       //Api3()
       //Api_2()
       //Api1()
@@ -70,7 +76,7 @@ class MyApp extends StatelessWidget {
      // Select()
       //Logicincreament()
       //TextApi()
-      Login()
+     // Login()
       //Favorite()
       //Slid()
      // Count(),
